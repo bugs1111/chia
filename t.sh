@@ -6,7 +6,7 @@ fi
 
 if [ $1 != 1 ] && [ $1 != 2 ] && [ $1 != 3 ] && [ $1 != 4 ] && [ $1 != 5 ] && [ $1 != 6 ]; then
 	echo "INVALIED PARM $1"
-	exit
+	exit 2
 fi
 
 echo $1
