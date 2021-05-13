@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source ./color.sh
-
 
 SNAME="$HOSTNAME"
 WNAME="CHIA"
