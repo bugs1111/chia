@@ -1,15 +1,10 @@
-# 
-echo 'remove chia-blockchain...'
-rm -rf chia-blockchain
+CHIA=chia-blockchain
+
+if [ -d "~/$CHIA" ];then
+  echo 'remove chia-blockchain...'
+  rm -rf ~/$CHIA
+fi
 
 
-echo 'git chia...'
-git clone https://github.com/Chia-Network/chia-blockchain.git -b latest --recurse-submodules
-
-
-echo 'install chia...'
-cd ~/chia-blockchain && chmod +x install.sh && ./install.sh
-
-
-
-# git clone https://github.com/Chia-Network/chia-blockchain.git -b latest --recurse-submodules && cd chia-blockchain && chmod +x install.sh && ./install.sh && . ./activate && chia init
+echo 'installing chia...'
+git clone https://github.com/Chia-Network/chia-blockchain.git -b latest --recurse-submodules ~/$CHIA && cd ~/$CHIA && chmod +x install.sh && ./install.sh && . ./activate && chia init

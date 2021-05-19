@@ -11,3 +11,4 @@ fi
 
 echo $1
 
+bash ../$1.sh

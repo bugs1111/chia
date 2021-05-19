@@ -1,4 +1,3 @@
-sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
 
-sudo apt install git net-tools openssh-server tmux vim -y
-
+sudo apt install git openssh-server tmux -y
