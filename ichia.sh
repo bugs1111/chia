@@ -1,3 +1,5 @@
+sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
+
 CHIA=chia-blockchain
 
 if [ -d "~/$CHIA" ];then

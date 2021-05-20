@@ -4,8 +4,6 @@ echo '\_   / \   +  \_   /\\   +  \_   / \/  =  \_   / \^  '
 echo '  \_| ||        \_|  |        \_|  |        \_| ||   '
 echo ''
 
-echo "./1.sh bla bla"
-echo "./2.sh bla bla"
-echo "./3.sh bla bla"
+echo "./y1.sh y2.sh y3.sh start jobs."
 echo ''
 
