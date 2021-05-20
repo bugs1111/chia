@@ -1,5 +1,11 @@
 # lao xiong zhuan yong
 
+if [ $# -lt 2 ]; then
+	echo "  USAGE: py <disk num> <queue num>"
+	exit
+fi
+
+
 echo "removing tmp dir '/mnt/t$1/q$2'."
 rm -rf /mnt/t$1/q$2
 
