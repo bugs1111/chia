@@ -1,10 +1,12 @@
 source global.sh
 
-sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
+sshpass -p chiachia sudo apt update -y --fix-missing
+sshpass -p chiachia sudo apt upgrade -y --fix-broken
+sshpass -p chiachia sudo apt autoremove -y
 
-sudo apt install git tmux sshpass ntpdate curl -y
-
-sudo ntpdate cn.ntp.org.cn && sudo hwclock -w
+sshpass -p chiachia sudo apt install git tmux sshpass ntpdate curl -y
+sshpass -p chiachia sudo ntpdate cn.ntp.org.cn 
+sshpass -p chiachia sudo hwclock -w
 
 if [ -d $CHIAROOT ];then
   echo 'CHIA 已经存在，删除旧的！'
