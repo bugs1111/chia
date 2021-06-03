@@ -9,6 +9,9 @@ SNAME="$HOSTNAME"
 # tmux window name
 WNAME="CHIA"
 
+# log 过滤器
+LOGF="^Starting phase|^Time for phase|^Total time|error"
+
 # 任务间隔 30 mins
 JOB_ITERV=$[ 30 * 60 ]
 # 最小间隔 2 mins

@@ -34,3 +34,9 @@ echo '清理临时盘。'
 rm -rf /mnt/t1/*
 rm -rf /mnt/t2/*
 rm -rf /mnt/t3/*
+
+
+echo '加载机械硬盘。'
+sshpass -p chiachia sudo mount /dev/sdb /mnt/d1
+sshpass -p chiachia sudo mount /dev/sdc /mnt/d2
+sshpass -p chiachia sudo mount /dev/sdd /mnt/d3
