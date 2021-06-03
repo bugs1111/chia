@@ -29,4 +29,4 @@ echo "开始绘制 'd$2' ($3/3)。"
 echo ""
 echo "--== $MSG ==--"
 echo ""
-cd $CHIAROOT && . ./activate && chia plots create -f $FK -p $PK -k 32 -b 3200 -r 4 -n 999 -t /mnt/t$2/q$3 -2 /mnt/d$2 -d /mnt/d$2 | grep --color=auto -i -E $LOGF
+cd $CHIAROOT && . ./activate && chia plots create -f $FK -p $PK -k 32 -b 3200 -r 4 -n 999 -t /mnt/t$2/q$3 -2 /mnt/d$2 -d /mnt/d$2 | grep --color=auto -i -E "$LOGF"
