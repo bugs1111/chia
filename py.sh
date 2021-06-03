@@ -1,13 +1,26 @@
-# lao xiong zhuan yong
+source global.sh
 
-if [ $# -lt 2 ]; then
-	echo "  USAGE: py <disk num> <queue num>"
-	exit
-fi
+# echo $JOB_ITERV
+
+tmux send-keys -t $SNAME:$WNAME.0 "./p.sh y 1 1" C-m
+sleep $MIN_ITERV
+tmux send-keys -t $SNAME:$WNAME.1 "./p.sh y 2 1" C-m
+sleep $MIN_ITERV
+tmux send-keys -t $SNAME:$WNAME.2 "./p.sh y 3 1" C-m
+
+sleep $JOB_ITERV
+
+tmux send-keys -t $SNAME:$WNAME.3 "./p.sh y 1 2" C-m
+sleep $MIN_ITERV
+tmux send-keys -t $SNAME:$WNAME.4 "./p.sh y 2 2" C-m
+sleep $MIN_ITERV
+tmux send-keys -t $SNAME:$WNAME.5 "./p.sh y 3 2" C-m
 
 
-echo "removing tmp dir '/mnt/t$1/q$2'."
-rm -rf /mnt/t$1/q$2
+sleep $JOB_ITERV
 
-echo "start plotting on disk 'd$1' ($2/3)."
-cd ~/chia-blockchain && . ./activate && chia plots create -f b4c607b0d55c1d0df93955cb126182140b3b0f126a02952b11eef7942fafc8e2975cc87b708e69902e7735f07818e475 -p 94d6abb0c5197892ff057b50e7d65d03ca485bcac6b6acea6b0dac883719d7668debe4e4ffc9db509d48b805091d9ace -k 32 -b 3200 -r 4 -n 40 -t /mnt/t$1/q$2 -d /mnt/d$1
+tmux send-keys -t $SNAME:$WNAME.6 "./p.sh y 1 3" C-m
+sleep $MIN_ITERV
+tmux send-keys -t $SNAME:$WNAME.7 "./p.sh y 2 3" C-m
+sleep $MIN_ITERV
+tmux send-keys -t $SNAME:$WNAME.8 "./p.sh y 3 3" C-m

@@ -1,1 +1,0 @@
-sudo apt install git vim tmux sshpass openssh-server -y

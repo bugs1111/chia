@@ -1,0 +1,23 @@
+token: ""
+path:
+- /mnt/d1
+- /mnt/d2
+- /mnt/d3
+minerName: p51
+apiKey: a0e8bba6-9802-48c5-a80e-63e7e9ba6e20
+cachePath: ""
+deviceId: ""
+extraParams: {}
+log:
+  lv: warn
+  path: ./log/
+  name: miner.log
+url:
+  info: ""
+  submit: ""
+  line: ""
+scanPath: true
+scanMinute: 30
+debug: ""
+language: cn
+singleThreadLoad: false

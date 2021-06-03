@@ -58,11 +58,12 @@ tmux split -h -p 50
 
 
 tmux selectp -t 9
-tmux split -h -p 20
+tmux split -h -p 20 -c ~/hpool
 
 # tmux send-keys -t $SNAME:$WNAME.0 C-b t
-tmux send-keys -t $SNAME:$WNAME.10 "cd ~/hpool" C-m
-tmux send-keys -t $SNAME:$WNAME.9 "bash ~/chia/info.sh" C-m
+# tmux send-keys -t $SNAME:$WNAME.10 "./hpool-miner-chia" C-m
+tmux send-keys -t $SNAME:$WNAME.10 "echo 'hi x-man" C-m
+tmux send-keys -t $SNAME:$WNAME.9 "echo 'bash p[b,x,y,z].sh 来启动绘制程序。'" C-m
 
 tmux selectp -t 9
 tmux a -t $SNAME
