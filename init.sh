@@ -15,7 +15,8 @@ fi
 
 
 echo '下载并安装CHIA。'
-git clone https://github.com/Chia-Network/chia-blockchain.git -b latest $CHIAROOT && cd $CHIAROOT  && bash install.sh && . ./activate && chia init
+# git clone https://github.com/Chia-Network/chia-blockchain.git -b latest $CHIAROOT && cd $CHIAROOT  && bash install.sh && . ./activate && chia init
+cp -rf ~/chia/$CHIA $CHIAROOT && cd $CHIAROOT  && bash install.sh && . ./activate && chia init && chia version
 
 
 if [ -d "~/hpool" ];then
@@ -37,6 +38,4 @@ rm -rf /mnt/t3/*
 
 
 echo '加载机械硬盘。'
-sshpass -p chiachia sudo mount /dev/sdb /mnt/d1
-sshpass -p chiachia sudo mount /dev/sdc /mnt/d2
-sshpass -p chiachia sudo mount /dev/sdd /mnt/d3
+bash ~/chia/mnt.sh ntfs
