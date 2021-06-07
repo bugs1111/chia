@@ -17,6 +17,9 @@ JOB_ITERV=$[ 30 * 60 ]
 # 最小间隔 2 mins
 MIN_ITERV=$[ 2 * 60 ]
 
+# password
+PWD=chiachia
+
 # 不同的配置 Famer pkey 、 Pool pkey 、 HPool API Key
 FK_B=b58fc9d26e7249eb0f0ee553e94284319916de5c9d7ef4ab04eecf28361e1b891499580e43ae763fe3feb42cf1c36309
 PK_B=b76798e0a7a41e27eea6eb2c40c57048d0765cc246de3a63bf9c9d14e9d6faf4da3c6516e248401c0b48caa9565a7453
