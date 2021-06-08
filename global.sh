@@ -10,7 +10,7 @@ SNAME="$HOSTNAME"
 WNAME="CHIA"
 
 # log 过滤器
-LOGF="^Starting phase|^Time for phase|^Total time|error"
+LOGF="^Starting phase|^Time for phase|^Total time"
 
 # 任务间隔 30 mins
 JOB_ITERV=$[ 30 * 60 ]

@@ -39,3 +39,6 @@ rm -rf /mnt/t3/*
 
 echo '加载机械硬盘。'
 bash ~/chia/mnt.sh ntfs
+
+
+mkdir -p ~/chia/logs
