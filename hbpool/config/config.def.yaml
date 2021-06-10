@@ -1,0 +1,8 @@
+access_id: be285b6c-5ee3-3547-5e4c-f2d35ad562fc
+worker_name: p1
+scan_interval: 60
+plots_dir:
+- /mnt/d1/
+- /mnt/d2/
+- /mnt/d3/
+
