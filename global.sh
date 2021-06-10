@@ -51,13 +51,3 @@ MSG_W="王旭 8T 540 （340 + 200）"
 # 结束
 
 
-# chia_plot <pool_key> <farmer_key> [tmp_dir] [tmp_dir2] [num_threads] [log_num_buckets]
-~/plotter/build/chia_plot \
-  -p ada9c43e0cc2c1aa504696ae16dcae38197b4a5672b356a74ad52c1ba5ad9c63c73efbb9afff0d695eaaf27d34e0c50a \
-  -f 98b940a158a79cc7f6ed68a9b50cce5c1436c81ee8cc48d6bd2d820af3315560b091dc805b8eb5bb49cbc34cf6745141 \
-  -n -1 \
-  -r 32 \
-  -t /mnt/t1/ \
-  -2 /mnt/t1/ \
-  -d /mnt/d1/
-
